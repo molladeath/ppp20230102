@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import './App.css';
+import Notice from './component/Notice';
 import QQQ from './component/qqq';
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
         <p>화면 정가운데</p>
       </div>
         <QQQ></QQQ>
+
+        <Notice title='공지사항'></Notice>
     </div>
   );
 }

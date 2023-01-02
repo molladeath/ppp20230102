@@ -1,7 +1,7 @@
 
 import React ,{ useState }from 'react';
 
-function QQQ(props) {
+function QQQ() {
     const [qqqopen , qqqSet] = useState(true);
     return (
         <div id= "qqq"> 
