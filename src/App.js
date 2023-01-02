@@ -1,11 +1,11 @@
 import {useState} from 'react';
+import './App.css';
 
 function App() {
-  const [count , setCount] = useState(0);
+  const [open , setToggle] = useState(true);
   return (
-    <div className="App">
-      <button onClick={()=> { setCount(count+1);}}>증가</button>
-      <h2 style={{fontSize : 50}}>{count}</h2>
+    <div className={open ?"white" :"dark"} >
+      <button onClick={()=> { setToggle(!open);}}>바뀜</button>
     </div>
   );
 }
