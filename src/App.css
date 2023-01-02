@@ -62,3 +62,37 @@ body{height: 3000;}
   display: none;
 }
 .openpopup #pop{ display: block;}
+
+
+#qqq{
+  position:fixed;
+  right : 0;
+  top: 0; bottom: 0;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#qqq ul{margin: 0; padding: 0;}
+#qqq li{
+  list-style: none; padding: 0; margin: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+#qqqbox{
+  position: absolute;
+  background-color: white;
+  width: 400px;
+  height: 400pz;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: translate(100%);
+  transition: 0.5s;
+}
+
+#qqqbox.show{
+  transform: translate(0);
+}
