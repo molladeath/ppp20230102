@@ -4,8 +4,11 @@ import './App.css';
 function App() {
   const [open , setToggle] = useState(true);
   return (
-    <div className={open ?"white" :"dark"} >
-      <button onClick={()=> { setToggle(!open);}}>바뀜</button>
+    <div className='body openpopup' >
+      <div id = 'pop'>
+        <button>닫기</button>
+        <p>화면 정가운데</p>
+      </div>
     </div>
   );
 }
